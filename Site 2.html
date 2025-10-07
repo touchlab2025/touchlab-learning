@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TouchLab - Manutenção de Smartphones</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/565/565547.png" />
+
+  <style>
+    /* Animações extras personalizadas */
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+      animation: spin-slow 8s linear infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 1.2s ease-out forwards;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-60">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-4xl font-bold text-blue-600 animate-fadeInUp">🔧 TouchLab</h1>
+        <h1 class="text-2xl font-bold text-gray-600 animate-fadeInUp">Solicite um orçamento sem compromisso</h1>
+
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#servicos" class="hover:text-blue-600 transition">Serviços</a>
+        <a href="#sobre" class="hover:text-blue-600 transition">Sobre</a>
+        <a href="#contato" class="hover:text-blue-600 transition">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-blue-600 text-white py-20 text-center relative overflow-hidden">
+    <div class="animate-fadeInUp">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">📱 Assistência Técnica Especializada</h2>
+      <p class="text-lg mb-8">Manutenção e revisão de smartphones — atendimento rápido, confiável e 24 horas 💬</p>
+      <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20um%20orçamento%20de%20reparo."
+         target="_blank"
+         class="bg-white text-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition transform hover:scale-105">
+        💬 Solicitar orçamento via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="py-20 max-w-6xl mx-auto px-6">
+    <h3 class="text-4xl font-bold text-center mb-14 animate-fadeInUp">💼 Nossos Serviços</h3>
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- Serviço 1 -->
+      <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 duration-300 text-center animate-fadeInUp">
+        <div class="text-5xl mb-4 animate-bounce">📱</div>
+        <h4 class="text-2xl font-semibold mb-3 text-blue-600">Troca de Tela</h4>
+        <p>Substituímos telas quebradas com peças originais e garantia total. Seu celular como novo!</p>
+      </div>
+
+      <!-- Serviço 2 -->
+      <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 duration-300 text-center animate-fadeInUp">
+        <div class="text-5xl mb-4 animate-pulse">🔋</div>
+        <h4 class="text-2xl font-semibold mb-3 text-blue-600">Reparo de Bateria</h4>
+        <p>Diagnóstico e substituição de baterias danificadas com rapidez e segurança 🔧</p>
+      </div>
+
+      <!-- Serviço 3 -->
+      <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 duration-300 text-center animate-fadeInUp">
+        <div class="text-5xl mb-4 animate-spin-slow">⏰</div>
+        <h4 class="text-2xl font-semibold mb-3 text-blue-600">Assistência 24h</h4>
+        <p>Atendimento em qualquer horário — inclusive a domicílio! 🚗💨</p>
+      </div>
+
+      <!-- Serviço 4 -->
+      <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 duration-300 text-center animate-fadeInUp">
+        <div class="text-5xl mb-4 animate-bounce">🧹</div>
+        <h4 class="text-2xl font-semibold mb-3 text-blue-600">Limpeza Interna</h4>
+        <p>Removemos sujeiras, poeira e umidade que prejudicam o desempenho do seu smartphone.</p>
+      </div>
+
+      <!-- Serviço 5 -->
+      <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 duration-300 text-center animate-fadeInUp">
+        <div class="text-5xl mb-4 animate-pulse">💾</div>
+        <h4 class="text-2xl font-semibold mb-3 text-blue-600">Recuperação de Dados</h4>
+        <p>Recuperamos fotos, vídeos e arquivos apagados de forma segura e profissional 📂</p>
+      </div>
+
+      <!-- Serviço 6 -->
+      <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 duration-300 text-center animate-fadeInUp">
+        <div class="text-5xl mb-4 animate-pulse">⚙️</div>
+        <h4 class="text-2xl font-semibold mb-3 text-blue-600">Atualização de Software</h4>
+        <p>Deixe o sistema do seu smartphone sempre atualizado, rápido e sem falhas 🧠</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="bg-gray-100 py-20 px-6 text-center animate-fadeInUp">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold mb-6">🏆 Sobre a TouchLab</h3>
+      <p class="text-lg leading-relaxed">
+        A <strong>TouchLab</strong> é referência em manutenção e revisão de smartphones em São Paulo.
+        Contamos com técnicos especializados, atendimento 24 horas e garantia em todos os serviços.
+        Nosso compromisso é com a **qualidade, rapidez e confiança** no atendimento. 💙
+      </p>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-20 max-w-6xl mx-auto px-6 animate-fadeInUp">
+    <h3 class="text-3xl font-bold text-center mb-10">📍 Fale Conosco</h3>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- Formulário -->
+      <form class="space-y-4 bg-white p-8 rounded-2xl shadow">
+        <input type="text" placeholder="Seu nome" class="w-full border p-3 rounded-lg" required />
+        <input type="email" placeholder="Seu e-mail" class="w-full border p-3 rounded-lg" required />
+        <textarea placeholder="Descreva seu problema" class="w-full border p-3 rounded-lg" rows="4" required></textarea>
+        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 font-semibold w-full transition transform hover:scale-105">
+          🚀 Enviar mensagem
+        </button>
+      </form>
+
+      <!-- Informações -->
+      <div class="flex flex-col justify-center space-y-6 text-lg">
+        <div>
+          <h4 class="text-xl font-semibold text-blue-600 mb-1">📍 Endereço</h4>
+          <p>Rua Uruçuca, 34 - Vila Carrão, São Paulo - SP</p>
+          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.406952921882!2d-46.551102799999995!3d-23.5538234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f50309ac59f%3A0xe4ad148235743b96!2sTouchLab%20-%20Assist%C3%AAncia%20t%C3%A9cnica%20de%20smartphones!5e0!3m2!1spt-BR!2sbr!4v1759770952867!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-blue-600 mb-1">💬 WhatsApp</h4>
+          <a href="https://wa.me/5511999999999" target="_blank" class="text-blue-600 hover:underline">
+            +55 (11) 99119-4159
+          </a>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-blue-600 mb-1">📧 E-mail</h4>
+          <p>touchlab2025@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20meu%20smartphone."
+     target="_blank"
+     class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition transform hover:scale-110 animate-float"
+     title="Fale conosco no WhatsApp">
+    💬
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center py-6 mt-16">
+    <p>© 2025 TouchLab - Realize um orçamento e consertamos seu celular no conforto do seu lar! </p>
+  </footer>
+
+</body>
+</html>
